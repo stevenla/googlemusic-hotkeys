@@ -24,8 +24,12 @@ on sendAction(action)
   return false
 end sendAction
 
-on run
-  if sendAction("playPause") is false then
+on run argv
+  set action to "playPause"
+  if count of argv is greater than 0 then
+    set action to item 1 of argv
+  end if
+  if sendAction(action) is false and action is "playPause" then
     openWindow()
   end if
 end run
