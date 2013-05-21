@@ -17,10 +17,10 @@ keys to the F-keys.
 Comes with Google Chrome and Safari variants. Both have the same syntax, just
 different files.
 
-*Usage:* `./chrome.scpt ACTION`
+**Usage:** `./chrome.scpt ACTION`
 
-*Actions:* playPause, prevSong, nextSong, toggleShuffle, toggleRepeat. A full
-list of actions is availible from [this gist][]
+**Actions:** `playPause`, `prevSong`, `nextSong`, `toggleShuffle`,
+`toggleRepeat`. A full list of actions is availible from [this gist][]
 
 
   [KeyRemap4MacBook]: http://pqrs.org/macosx/keyremap4macbook/
