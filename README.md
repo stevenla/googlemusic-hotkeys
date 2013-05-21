@@ -18,7 +18,7 @@ Requires the [Alfred Powerpack][]!
 Comes with Google Chrome and Safari variants. Both have the same syntax, just
 different files.
 
-**Usage:** `./chrome.scpt ACTION` or `./safari.scpt ACTION`
+**Usage:** `./chrome.applescript ACTION` or `./safari.applescript ACTION`
 
 **Actions:** `playPause`, `prevSong`, `nextSong`, `toggleShuffle`,
 `toggleRepeat`. A full list of actions is availible from [this gist][]
