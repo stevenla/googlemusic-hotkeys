@@ -17,7 +17,7 @@ on sendAction(action)
     repeat with w in (every window)
       repeat with t in (every tab whose URL contains "play.google.com/music") of w
 		  
-		if action = "prev" then
+		if action = "prevSong" then
         		tell t to execute javascript "(document.getElementsByClassName('flat-button')[1]).click();"
 		end if
 		
@@ -25,7 +25,7 @@ on sendAction(action)
         		tell t to execute javascript "(document.getElementsByClassName('flat-button')[2]).click();"
 		end if
 		
-		if action = "next" then
+		if action = "nextSong" then
         		tell t to execute javascript "(document.getElementsByClassName('flat-button')[3]).click();"
 		end if
 		
