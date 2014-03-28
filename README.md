@@ -1,3 +1,7 @@
+# NOTICE
+
+**I'm no longer maintaining this version.** Please check out the native OS X app https://github.com/stevenla/GooglePlayMusicRemote
+
 # Google Music Hotkeys
 
 Alfred 2.0 workflows and Applescripts to control Google Play Music
