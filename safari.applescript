@@ -25,11 +25,11 @@ on sendAction(action)
   		end if
 		
   		if action = "like" then
-          		tell t to execute javascript "($('li', document.getElementsByClassName('rating-container thumbs')[0])[0]).click();"
+          		tell t to execute javascript "document.getElementsByClassName('rating-container thumbs')[0].getElementsByTagName('li')[0].click();"
   		end if
 		
   		if action = "dislike" then
-          		tell t to execute javascript "($('li', document.getElementsByClassName('rating-container thumbs')[0])[1]).click();"
+          		tell t to execute javascript "document.getElementsByClassName('rating-container thumbs')[0].getElementsByTagName('li')[1].click();"
   		end if
         return true
       end repeat
