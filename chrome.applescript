@@ -37,6 +37,10 @@ on sendAction(action)
                 tell t to execute javascript "document.getElementsByClassName('rating-container thumbs')[0].getElementsByTagName('li')[1].click();"
         end if
 
+        if action = "refresh" then
+                tell t to execute javascript "document.querySelectorAll('[data-id=refresh]')[0].click();"
+        end if
+
         return true
       end repeat
     end repeat
