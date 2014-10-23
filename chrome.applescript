@@ -16,27 +16,31 @@ on sendAction(action)
     -- Pause the track
     repeat with w in (every window)
       repeat with t in (every tab whose URL contains "play.google.com/music") of w
-		  
-		if action = "prevSong" then
-        		tell t to execute javascript "(document.getElementsByClassName('flat-button')[1]).click();"
-		end if
-		
-		if action = "playPause" then
-        		tell t to execute javascript "(document.getElementsByClassName('flat-button')[2]).click();"
-		end if
-		
-		if action = "nextSong" then
-        		tell t to execute javascript "(document.getElementsByClassName('flat-button')[3]).click();"
-		end if
-		
-		if action = "like" then
-        		tell t to execute javascript "document.getElementsByClassName('rating-container thumbs')[0].getElementsByTagName('li')[0].click();"
-		end if
-		
-		if action = "dislike" then
-        		tell t to execute javascript "document.getElementsByClassName('rating-container thumbs')[0].getElementsByTagName('li')[1].click();"
-		end if
-		
+
+        if action = "prevSong" then
+                tell t to execute javascript "(document.getElementsByClassName('flat-button')[1]).click();"
+        end if
+
+        if action = "playPause" then
+                tell t to execute javascript "(document.getElementsByClassName('flat-button')[2]).click();"
+        end if
+
+        if action = "nextSong" then
+                tell t to execute javascript "(document.getElementsByClassName('flat-button')[3]).click();"
+        end if
+
+        if action = "like" then
+                tell t to execute javascript "document.getElementsByClassName('rating-container thumbs')[0].getElementsByTagName('li')[0].click();"
+        end if
+
+        if action = "dislike" then
+                tell t to execute javascript "document.getElementsByClassName('rating-container thumbs')[0].getElementsByTagName('li')[1].click();"
+        end if
+
+        if action = "refresh" then
+                tell t to execute javascript "document.querySelectorAll('[data-id=refresh]')[0].click();"
+        end if
+
         return true
       end repeat
     end repeat
